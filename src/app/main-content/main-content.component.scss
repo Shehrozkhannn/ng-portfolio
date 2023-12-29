@@ -1,0 +1,41 @@
+.main-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .details-section{
+        width: 448px;
+        h1{
+            font-size: 44px;
+            b{
+                color: #b365e1;
+            }
+        }
+        p{
+            color:#3a3535
+        }
+        .git-link-icons{
+            margin-top: 10px;
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    .logo-section{
+        padding-top: 50px;
+    }
+}
+.tech-stack-container{
+    display: flex;
+    justify-content: center;
+    width: 84%;
+    margin-top: 23px;
+    align-items: center;
+    span{
+        margin-right: 30px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    img{
+        margin-right: 20px;
+    }
+}

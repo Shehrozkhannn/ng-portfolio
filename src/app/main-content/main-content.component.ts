@@ -12,4 +12,14 @@ export class MainContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openLinkedInProfile(){
+    const linkedInProfileUrl  = 'https://www.linkedin.com/in/sharoze-kkhan';
+    window.open(linkedInProfileUrl, '_blank');
+  }
+
+  openGitHubProfile(){
+    const gitHubProfileLink = 'https://github.com/Shehrozkhannn';
+    window.open(gitHubProfileLink, '_blank');
+  }
+
 }
