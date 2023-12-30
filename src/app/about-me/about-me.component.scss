@@ -1,0 +1,64 @@
+.about-me-container{
+    display: flex;
+    width: 100%;
+    padding-top: 160px;
+    justify-content: center;
+    .work-img{
+        img{
+            border-radius: 11px;
+        }
+    }
+    .work-img-details{
+        width: 500px;
+        margin-left: 45px;
+        .about-me{
+            color: #00a89c;
+            font-weight: 800;
+        }
+    }
+}
+b{
+    color: #00a89c;
+}  
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  .animated-section span{
+      color: grey;
+  }
+
+  .animated-section.triggered p span {
+    animation: fade-in 1s ease-in-out; 
+    transition: 2s ease-in;
+    color: #000;
+  }
+
+  .title-word {
+    animation: color-animation 2s linear infinite;
+    transition: 2s ease-out;
+    font-size: 40px;
+  }
+
+  .title-word-1 {
+    color: #00a89c;
+    color: #000;
+    color: #00ffed;
+  }
+  
+  .title-word-2 {
+    color: #00a89c;
+    color: #000;
+    color: #00ffed;
+  }
+
+  @keyframes color-animation {
+    0%    {color: #00a89c}
+    50% {color: #00ffed}
+    100%  {color: #000}
+  }
+  
