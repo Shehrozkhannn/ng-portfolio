@@ -61,4 +61,57 @@ b{
     50% {color: #00ffed}
     100%  {color: #000}
   }
-  
+
+  @media (min-width: 400px) and (max-width: 780px) {
+    .about-me-container{
+      display: flex;
+      width: 100%;
+      padding-top: 160px;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 10px;
+      .work-img{
+        display: flex;
+        justify-content: center;
+        img{
+          width: 600px;
+        }
+      }
+      .work-img-details{
+        width: auto;
+        .about-me{
+          width: 100%;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 485px) and (max-width: 500px) {
+    .work-img{
+      img{
+        width: 404px;
+      }
+    }
+    .work-img-details{
+      padding-right: 41px;
+      h2{
+        width: 403px;
+      }
+    }
+  }
+
+    @media (min-width: 400px) and (max-width: 484px) {
+      .work-img{
+        img{
+          width: 333px !important;
+        }
+      }
+      .work-img-details{
+        padding-right: 41px;
+        h2{
+          width: 400px !important;
+        }
+      }
+  }

@@ -26,3 +26,17 @@
         }
     }
 }
+
+
+@media (min-width: 400px) and (max-width: 484px) {
+  .right-section{
+      span{
+          font-size: 14px !important;
+      }
+  }
+  .left-section{
+      ul{
+          font-size: 14px;
+      }
+  }
+}

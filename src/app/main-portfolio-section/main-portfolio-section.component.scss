@@ -1,0 +1,186 @@
+.portfolio-section{
+    padding-top: 96px;
+    .header-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 50px;
+        span{
+            font-size: 19px;
+            color: #b365e1;
+            font-weight: 700;
+        }
+    }
+    .portfolio-content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .project-details{
+            width: 500px;
+            margin-left: 45px;
+            .tech-buttons-section{
+                margin: 21px 0px;
+                display: flex;
+                justify-content: center;
+                .tech{
+                    display: flex;
+                    align-items: center;
+                }
+                span{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-right: 30px;
+                }
+            }
+            .demo-btns{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 45px;
+                button{
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .code{
+                    display: flex;
+                }
+                .live-demo{
+                    display: flex;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: 60px;
+        span{
+            font-size: 19px;
+            color: #b365e1;
+            font-weight: 700;
+        }
+    }
+}
+.contact-desp{
+    display: flex;
+    margin-top: 19px;
+}
+.first-line{
+    display: flex;
+}
+.heading{
+    display: block;
+    color: black !important;
+    margin-left: 16px;
+}
+.details{
+    color: grey !important;
+    margin-left: 45px;
+    font-size: 15px !important;
+}
+.location{
+    margin-right: 72px;
+    margin-left: 29px;
+}
+
+  
+  @media (min-width: 400px) and (max-width: 780px) {
+        .portfolio-content{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .project-img{
+                margin-bottom: 24px;
+                display: flex;
+                justify-content: center;
+                img{
+                    min-width: 307px;
+                    max-width: 500px;
+                }
+            }
+            .project-details{
+                width: auto !important;
+                margin-left: 45px !important;
+            }
+        }
+  }
+
+
+  @media (min-width: 1060px) and (max-width: 1200px) {
+    .portfolio-content{
+        .project-img{
+            img{
+                width: 500px;
+            }
+        }
+        .project-details{
+            width: auto;
+        }
+    }
+}
+
+
+@media (min-width: 954px) and (max-width: 1059px) {
+    .portfolio-content{
+        .project-img{
+            img{
+                width: 396px;
+            }
+        }
+        .project-details{
+            width: auto;
+        }
+    }
+}
+
+@media (min-width: 764px) and (max-width: 953px) {
+    .portfolio-content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .project-img{
+            img{
+                width: 750px;
+            }
+        }
+        .project-details{
+            width: auto !important;
+            margin-left: 82px !important;
+        }
+    }
+}
+
+@media (min-width: 400px) and (max-width: 484px) {
+  .tech-buttons-section{
+      span{
+          font-size: 13px !important;
+          margin-right: 6px !important;
+      }
+  }
+  .project-img{
+      img{
+          width: 358px !important;
+      }
+  }
+  }
+
+
+  @media (min-width: 400px) and (max-width: 536px) {
+    .contact-desp{
+        flex-direction: column;
+        align-items: center;
+    }
+    .location{
+        margin-left: unset !important;
+    }
+
+}
