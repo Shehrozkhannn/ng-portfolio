@@ -10,3 +10,12 @@
 img{
     cursor: pointer;
 }
+
+@media (min-width:400px) and (max-width: 484px){
+    .footer-section{
+        padding: 0px 14px !important;
+    }
+    .footer-btns{
+        display: flex;
+    }
+}

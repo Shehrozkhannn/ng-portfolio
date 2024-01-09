@@ -22,6 +22,16 @@ export class MainPortfolioSectionComponent implements OnInit {
     window.open(gitHubCodeUrl, '_blank');
   }
 
+  showChatDemo(){
+    const liveDemoUrl = 'https://shehrozkhannn.github.io/ng-chatlist/chatbox';
+    window.open(liveDemoUrl, '_blank');
+  }
+
+  goToChatwebsiteCode(){
+    const liveDemoUrl = 'https://github.com/Shehrozkhannn/ng-chatlist';
+    window.open(liveDemoUrl, '_blank'); 
+  }
+
   showUserListDemo(){
     const liveDemoUrl = 'https://shehrozkhannn.github.io/ng-todolist/';
     window.open(liveDemoUrl, '_blank');

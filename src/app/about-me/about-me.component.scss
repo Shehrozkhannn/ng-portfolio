@@ -69,7 +69,6 @@ b{
       padding-top: 160px;
       justify-content: center;
       flex-direction: column;
-      margin: 0 10px;
       .work-img{
         display: flex;
         justify-content: center;
@@ -111,7 +110,7 @@ b{
       .work-img-details{
         padding-right: 41px;
         h2{
-          width: 400px !important;
+          width: auto !important;
         }
       }
   }
