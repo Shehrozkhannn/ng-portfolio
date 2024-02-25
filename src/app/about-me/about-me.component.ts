@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { ModesService } from '../modes.service';
 
 @Component({
   selector: 'app-about-me',
@@ -9,6 +10,19 @@ export class AboutMeComponent {
 
   @ViewChild('animatedSection') animatedSection!: ElementRef;
   @HostListener('window:scroll', ['$event'])
+
+  isDarkMode:boolean = false;
+  constructor(private mode: ModesService) { 
+    // this.isDarkMode = mode.isDarkMode;
+  }
+
+  ngOnInit(): void {
+    console.log(this.isDarkMode,'PORTFOLIO')
+    this.mode.darkMode$.subscribe((isDark)=>{
+      console.log(isDark,'PORT')
+      this.isDarkMode = isDark
+    })
+  }
 
   checkScroll() {
     const element = this.animatedSection.nativeElement;

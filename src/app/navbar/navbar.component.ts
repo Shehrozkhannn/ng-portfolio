@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  @Output() sectionSelected = new EventEmitter<string>();
+  constructor(private elementRef: ElementRef) { }
 
   ngOnInit(): void {
+  }
+
+
+  navigateTo(section: string): void {
+    this.sectionSelected.emit(section);
   }
 
 }

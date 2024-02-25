@@ -19,3 +19,12 @@ img{
         display: flex;
     }
 }
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .footer-section{
+        padding: 0px 26px;
+    }
+    .footer-btns{
+        display: flex;
+    }
+}

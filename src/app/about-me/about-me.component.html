@@ -1,4 +1,4 @@
-<div class="about-me-container">
+<div class="about-me-container" [ngClass]="{'dark-mode': isDarkMode}">
   <div class="work-img">
     <img src="../../assets/work-lap.png" alt="" height="370" width="455" />
   </div>
@@ -17,7 +17,7 @@
     </h2>
     <div class="animated-section" #animatedSection>
       <p>
-        <span>
+        <span >
           As a junior Front-End Developer, I possess an impressive arsenal of
           skills in HTML, CSS , Javascript, Angular,Material UI, and SCSS. I
           excel in designing and maintaining responsive websites that offer a

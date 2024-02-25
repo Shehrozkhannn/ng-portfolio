@@ -1,15 +1,16 @@
 <div class="main-container">
-    <nav>
+    <nav class="sticky-navbar">
         <div class="right-section">
             <span>Sharoze.dev</span>
         </div>
         <div class="left-section">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li (click)="navigateTo('home')">Home</li>
+                <li (click)="navigateTo('about')">About</li>
+                <li (click)="navigateTo('projects')">Projects</li>
+                <li (click)="navigateTo('footer')">Contact</li>
             </ul>
         </div>
     </nav>
 </div>
+

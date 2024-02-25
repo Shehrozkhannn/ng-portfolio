@@ -60,7 +60,6 @@
         flex-direction: column;
         align-items: center;
         margin-top: 70px;
-        margin-bottom: 60px;
         span{
             font-size: 19px;
             color: #b365e1;
@@ -183,4 +182,57 @@
         margin-left: unset !important;
     }
 
+}
+
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+}
+.desp-color{
+    color: #bab7b7 !important;
+}
+
+.another-black{
+    color: #fff;
+}
+
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .header-section{
+        h2{
+            font-size: 20px;
+            margin: 0 27px;
+        }
+    }
+    .portfolio-content{
+        display: flex;
+        flex-direction: column;
+        .project-img{
+            img{
+                width: 305px;
+            }
+        }
+    }
+    .project-details{
+        margin-left: 16px !important;
+        width: unset !important;
+    }
+    .tech-buttons-section{
+        justify-content: unset !important;
+        span{
+            margin-right: unset !important;
+            font-size: 11px !important;
+        }
+    }
+    .contact-desp{
+        display: flex;
+        margin-top: unset;
+        flex-direction: column;
+        margin: 38px 0px;
+    }
+    .location{
+        margin-right: unset;
+        margin-left: unset;
+    }
+ 
 }

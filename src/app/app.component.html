@@ -1,7 +1,19 @@
 <div class="main-container">
-  <app-navbar></app-navbar>
-  <app-main-content></app-main-content>
-  <app-about-me></app-about-me>
-  <app-main-portfolio-section></app-main-portfolio-section>
-  <app-footer-section></app-footer-section>
+  <app-navbar (sectionSelected)="scrollTo($event)"></app-navbar>
+
+  <div id="home">
+    <app-main-content></app-main-content>
+  </div>
+
+  <div id="about">
+    <app-about-me></app-about-me>
+  </div>
+
+  <div id="projects" >
+    <app-main-portfolio-section></app-main-portfolio-section>
+  </div>
+
+  <div id="footer">
+    <app-footer-section></app-footer-section>
+  </div>
 </div>

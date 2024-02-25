@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModesService } from '../modes.service';
 
 @Component({
   selector: 'app-main-portfolio-section',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-portfolio-section.component.scss']
 })
 export class MainPortfolioSectionComponent implements OnInit {
-
-  constructor() { }
+  isDarkMode:boolean = false;
+  constructor(private mode: ModesService) { 
+    // this.isDarkMode = mode.isDarkMode;
+  }
 
   ngOnInit(): void {
+    console.log(this.isDarkMode,'PORTFOLIO')
+    this.mode.darkMode$.subscribe((isDark)=>{
+      console.log(isDark,'PORT')
+      this.isDarkMode = isDark
+    })
   }
 
   showBudgetLiveDemo(){
@@ -100,6 +108,16 @@ export class MainPortfolioSectionComponent implements OnInit {
 
   showHostCloudCode(){
     const liveDemoUrl = 'https://github.com/Shehrozkhannn/host-cloud';
+    window.open(liveDemoUrl, '_blank'); 
+  }
+
+  showSimplifyVmsDemo(){
+    const liveDemoUrl = 'https://www.simplifyvms.com';
+    window.open(liveDemoUrl, '_blank'); 
+  }
+
+  showEzraDemo(){
+    const liveDemoUrl = 'https://www.papajohns.com.pk';
     window.open(liveDemoUrl, '_blank'); 
   }
 

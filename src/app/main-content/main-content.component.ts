@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModesService } from '../modes.service';
 
 @Component({
   selector: 'app-main-content',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent implements OnInit {
-
-  constructor() { }
+  isDarkMode:boolean = false;
+  constructor(private mode: ModesService) { 
+  }
 
   ngOnInit(): void {
+    console.log(this.isDarkMode,'MAIN_CON')
+    this.mode.darkMode$.subscribe((isDark)=>{
+      console.log(isDark,'MAIN')
+      this.isDarkMode = isDark
+    })
+  }
+
+  toggleDarkMode() {
+    this.mode.toggleDarkMode();
   }
 
   openLinkedInProfile(){
@@ -21,5 +32,14 @@ export class MainContentComponent implements OnInit {
     const gitHubProfileLink = 'https://github.com/Shehrozkhannn';
     window.open(gitHubProfileLink, '_blank');
   }
+
+  downloadResume(){
+    const resumePath = 'assets/SharozeKhan.CV.pdf';
+    const link = document.createElement('a');
+    link.setAttribute('target','_blank');
+    link.setAttribute('href', resumePath);
+    link.click();
+  }
+
 
 }

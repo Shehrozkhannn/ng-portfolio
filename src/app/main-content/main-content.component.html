@@ -1,25 +1,38 @@
-<div class="main-content-container">
-    <div class="details-section">
-        <h1><b>F</b>ront-End <b>A</b>ngular <b>D</b>eveloper</h1>
-        <p>Hi, I'm Sharoze Khan. A passionate Front-end Angular Developer based in Karachi, Pakistan.</p>
-        <div class="git-link-icons">
-            <img src="../../assets/icons8-linkedin-48.png" alt="" height="38" width="38" (click)="openLinkedInProfile()">
-            <img src="../../assets/icons8-github-30.png" alt="" height="38" width="38" (click)="openGitHubProfile()">
+<div class="main" [ngClass]="{'dark-mode': isDarkMode}">
+    <div class="toogle"> 
+        <input type="checkbox" [(ngModel)]="isDarkMode" (change)="toggleDarkMode()" class="theme-checkbox" >
+    </div>
+    
+    <div class="main-content-container">
+        <div class="details-section">
+            <h1><b>F</b>ront-End <b>A</b>ngular <b>D</b>eveloper</h1>
+            <p [ngClass]="{'desp-color': isDarkMode}">Hi, I'm Sharoze Khan. A passionate Front-end Angular Developer based in Karachi, Pakistan.</p>
+            <div class="git-link-icons">
+                <img src="../../assets/icons8-linkedin-48.png" alt="" height="38" width="38" (click)="openLinkedInProfile()">
+                <img [ngClass]="{'git-mode': isDarkMode}" src="../../assets/icons8-github-30.png" alt="" height="38" width="38" (click)="openGitHubProfile()">
+            </div>
+        </div>
+        <div class="logo-section">
+            <img src="../../assets/final-portfolio-img.png" alt="">
         </div>
     </div>
-    <div class="logo-section">
-        <img src="../../assets/final-portfolio-img.png" alt="">
+    <div class="tech-stack-container">
+        <span>Tech Stack  | </span>
+        <div class="tech-stack">
+            <img src="../../assets/icons8-html-48.png" alt="" height="35" width="35">
+            <img src="../../assets/icons8-css-48.png" alt="" height="35" width="35">
+            <img src="../../assets/icons8-javascript-48.png" alt="" height="35" width="35">
+            <img src="../../assets/icons8-angularjs-48.png" alt="" height="35" width="35">
+            <img src="../../assets/icons8-bootstrap-48.png" alt="" height="35" width="35">
+            <img src="../../assets/icons8-material-ui-48.png" alt="" height="35" width="35">
+            <img src="../../assets/icons8-typescript-48.png" alt="" height="35" width="35">
+        </div>
+    </div>
+    <div class="down-resume-btn">
+        <button (click)="downloadResume()">DOWNLOAD RESUME</button>
     </div>
 </div>
-<div class="tech-stack-container">
-    <span>Tech Stack  | </span>
-    <div class="tech-stack">
-        <img src="../../assets/icons8-html-48.png" alt="" height="35" width="35">
-        <img src="../../assets/icons8-css-48.png" alt="" height="35" width="35">
-        <img src="../../assets/icons8-javascript-48.png" alt="" height="35" width="35">
-        <img src="../../assets/icons8-angularjs-48.png" alt="" height="35" width="35">
-        <img src="../../assets/icons8-bootstrap-48.png" alt="" height="35" width="35">
-        <img src="../../assets/icons8-material-ui-48.png" alt="" height="35" width="35">
-        <img src="../../assets/icons8-typescript-48.png" alt="" height="35" width="35">
-    </div>
-</div>
+
+
+
+
