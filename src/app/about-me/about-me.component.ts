@@ -10,6 +10,9 @@ export class AboutMeComponent {
 
   @ViewChild('animatedSection') animatedSection!: ElementRef;
   @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    this.checkScroll();
+  }
 
   isDarkMode:boolean = false;
   constructor(private mode: ModesService) { 
@@ -19,7 +22,6 @@ export class AboutMeComponent {
   ngOnInit(): void {
     console.log(this.isDarkMode,'PORTFOLIO')
     this.mode.darkMode$.subscribe((isDark)=>{
-      console.log(isDark,'PORT')
       this.isDarkMode = isDark
     })
   }

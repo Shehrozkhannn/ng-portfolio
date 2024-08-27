@@ -668,7 +668,9 @@
         </div>
         <div class="demo-btns">
           <div class="code">
-            <button [ngClass]="{'desp-color': isDarkMode}">Code</button>
+            <button [ngClass]="{'desp-color': isDarkMode}"
+            (click)="showChurchCode()"
+            >Code</button>
             <img
               src="../../assets/icons8-github-30.png"
               alt=""
@@ -677,7 +679,9 @@
             />
           </div>
           <div class="live-demo">
-            <button [ngClass]="{'desp-color': isDarkMode}">Live Demo</button>
+            <button [ngClass]="{'desp-color': isDarkMode}"
+            (click)="showChurchDemo()"
+            >Live Demo</button>
             <img src="../../assets/open.png" alt="" height="25" width="25" />
           </div>
         </div>
