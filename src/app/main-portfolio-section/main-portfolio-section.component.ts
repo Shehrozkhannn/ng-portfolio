@@ -121,5 +121,25 @@ export class MainPortfolioSectionComponent implements OnInit {
     window.open(liveDemoUrl, '_blank'); 
   }
 
+  goToRentACarCode(){
+    const liveCodeUrl = 'https://github.com/Shehrozkhannn/Rent-car';
+    window.open(liveCodeUrl, '_blank');    
+  }
+
+  showRentACarDemo(){
+    const liveDemoUrl = 'https://shehrozkhannn.github.io/Rent-car/';
+    window.open(liveDemoUrl, '_blank');  
+  }
+
+  showExzoCode(){
+    const liveDemoUrl = 'https://github.com/Shehrozkhannn/EXZO-test';
+    window.open(liveDemoUrl, '_blank');  
+  }
+
+  showExzoDemo(){
+    const liveDemoUrl = 'https://shehrozkhannn.github.io/EXZO-test/';
+    window.open(liveDemoUrl, '_blank');  
+  }
+
 
 }
