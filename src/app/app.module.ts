@@ -8,6 +8,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MainPortfolioSectionComponent } from './main-portfolio-section/main-portfolio-section.component';
 import { FooterSectionComponent } from './footer-section/footer-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterSectionComponent } from './footer-section/footer-section.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

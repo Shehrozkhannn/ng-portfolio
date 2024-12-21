@@ -1,19 +1,19 @@
 <div class="main-container">
   <app-navbar (sectionSelected)="scrollTo($event)"></app-navbar>
 
-  <div id="home">
+  <div id="home"  [@bounceIn]="sectionStates['home'] || 'hidden'">
     <app-main-content></app-main-content>
   </div>
 
-  <div id="about">
+  <div id="about"  [@bounceIn]="sectionStates['about'] || 'hidden'">
     <app-about-me></app-about-me>
   </div>
 
-  <div id="projects" >
+  <div id="projects">
     <app-main-portfolio-section></app-main-portfolio-section>
   </div>
 
-  <div id="footer">
+  <div id="footer" [@bounceIn]="sectionStates['footer'] || 'hidden'">
     <app-footer-section></app-footer-section>
   </div>
 </div>

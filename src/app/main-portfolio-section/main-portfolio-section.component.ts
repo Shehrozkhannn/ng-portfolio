@@ -1,24 +1,69 @@
 import { Component, OnInit } from '@angular/core';
 import { ModesService } from '../modes.service';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-main-portfolio-section',
   templateUrl: './main-portfolio-section.component.html',
-  styleUrls: ['./main-portfolio-section.component.scss']
+  styleUrls: ['./main-portfolio-section.component.scss'],
+    animations: [
+      trigger('fadeIn', [
+        state('hidden', style({ opacity: 0 })),
+        state('visible', style({ opacity: 1 })),
+        transition('hidden => visible', [
+          animate('1s ease-in-out')
+        ]),
+      ])
+    ]
 })
 export class MainPortfolioSectionComponent implements OnInit {
+  private observer: IntersectionObserver | any;
+  sectionStates:any = {};
   isDarkMode:boolean = false;
   constructor(private mode: ModesService) { 
     // this.isDarkMode = mode.isDarkMode;
   }
 
   ngOnInit(): void {
-    console.log(this.isDarkMode,'PORTFOLIO')
+    this.setupSectionObserver();
     this.mode.darkMode$.subscribe((isDark)=>{
-      console.log(isDark,'PORT')
       this.isDarkMode = isDark
     })
   }
+
+  ngOnDestroy() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
+  setupSectionObserver() {
+    const sections = document.querySelectorAll('div[id]'); // Target all sections with IDs
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: '0px 0px 100px 0px', // Add more margin to the bottom
+      threshold: 0.1// Trigger when 50% of the section is visible
+    };
+
+    // Create an IntersectionObserver instance to observe each section
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        console.log(entry.target.id, entry.isIntersecting);
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id;
+          this.sectionStates[sectionId] = 'visible'; // Mark section as visible to trigger animation
+        } else {
+          this.sectionStates[entry.target.id] = 'hidden'; // Mark section as hidden when it's out of view
+        }
+      });
+    }, options);
+
+    // Observe each section
+    sections.forEach(section => {
+      this.observer.observe(section);
+    });
+  }
+
 
   showBudgetLiveDemo(){
     const liveDemoUrl  = 'https://shehrozkhannn.github.io/ng-budget-app/';
