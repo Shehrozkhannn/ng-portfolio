@@ -41,6 +41,7 @@
     }
     img{
         margin-right: 20px;
+        cursor: pointer;
     }
 }
 .down-resume-btn{
@@ -285,3 +286,48 @@
     .git-mode{
       filter: contrast(0.5);
     }
+
+    //tech stack icons transitions 
+
+    .tech-stack-container {
+      margin: 20px;
+    }
+    
+    .tech-stack {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .iconDiv {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .iconDiv::after {
+      content: attr(tooltip);
+      position: absolute;
+      bottom: -30px; /* Position tooltip below the icon */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333; /* Tooltip background color */
+      color: #fff; /* Tooltip text color */
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      z-index: 1;
+    }
+    
+    .iconDiv:hover::after,
+    .iconDiv:focus-visible::after {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    

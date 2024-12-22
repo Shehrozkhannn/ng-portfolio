@@ -35,31 +35,35 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   setupSectionObserver() {
-    const sections = document.querySelectorAll('div[id]'); // Target all sections with IDs
+    const sections = document.querySelectorAll('div[id]');
     const options = {
-      root: null, // Use the viewport as the root
-      rootMargin: '0px 0px 100px 0px', // Add more margin to the bottom
-      threshold: 0.1// Trigger when 50% of the section is visible
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
     };
-
-    // Create an IntersectionObserver instance to observe each section
+  
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         console.log(entry.target.id, entry.isIntersecting);
         if (entry.isIntersecting) {
           const sectionId = entry.target.id;
-          this.sectionStates[sectionId] = 'visible'; // Mark section as visible to trigger animation
+          this.sectionStates[sectionId] = 'visible';
         } else {
-          this.sectionStates[entry.target.id] = 'hidden'; // Mark section as hidden when it's out of view
+          this.sectionStates[entry.target.id] = 'hidden';
         }
       });
     }, options);
-
-    // Observe each section
+  
     sections.forEach(section => {
       this.observer.observe(section);
     });
+  
+    // Disconnect the observer after the initial setup
+    setTimeout(() => {
+      this.observer.disconnect();
+    }, 500); // Adjust timing based on your needs
   }
+  
 
   scrollTo(section: string){
     const element = this.elementRef.nativeElement.querySelector(`#${section}`);

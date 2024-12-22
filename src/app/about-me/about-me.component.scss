@@ -37,6 +37,15 @@ b {
   color: #000;
 }
 
+/* Dark Mode */
+.dark-mode .animated-section span {
+  color: #ccc;
+}
+
+.dark-mode .animated-section.triggered p span {
+  color: #fff;
+}
+
 .title-word {
   animation: color-animation 2s linear infinite;
   transition: 2s ease-out;

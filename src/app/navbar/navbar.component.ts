@@ -17,4 +17,8 @@ export class NavbarComponent implements OnInit {
     this.sectionSelected.emit(section);
   }
 
+  loadApplication(){
+    window.location.reload();
+  }
+
 }
