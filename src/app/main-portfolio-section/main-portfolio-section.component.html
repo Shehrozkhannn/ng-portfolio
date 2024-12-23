@@ -8,19 +8,18 @@
     </div>
 
     <!-- coffee shop  -->
-    <div class="portfolio-content"  id="coffee-website"  [@fadeIn]="sectionStates['coffee-website'] || 'hidden'">
+   
+
+    <div class="portfolio-content" id="exzo-website"  [@fadeIn]="sectionStates['exzo-website'] || 'hidden'">
       <div class="project-img">
-        <img src="../../assets/coffee-website.PNG" alt="" height="351" width="628" />
+        <img src="../../assets/exzo.png" alt="" height="351" width="628" />
       </div>
-      <div class="project-details">
-        <h4>Coffee bucks</h4>
+       <div class="project-details">
+        <h4>EXZO</h4>
         <p>
-          A coffee bucks website is an online platform that allows users to place
-          an order for coffee. This website provides a user friendly interface.It
-          is built by using HTML, Javascript , CSS, and bootstrap.At "Coffee
-          bucks" we believe that coffee is more than just a beverage; it's an
-          experience. Our website is crafted with love and passion to share the
-          art and joy of coffee with aficionados and newcomers alike.
+          EXZO is an ecommerce webiste used for the buying the all tech related accessories
+          Mostly for headphones and different variety of headphones. I've built that website
+          on Angular using angular material.
         </p>
         <div class="tech-buttons-section">
           <div class="tech">
@@ -28,30 +27,29 @@
             <span>HTML</span>
           </div>
           <div class="tech">
+            <img src="../../assets/icons8-angularjs-48.png" alt="" height="30" width="30" />
+            <span>ANGULAR</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-typescript-48.png" alt="" height="30" width="30" />
+            <span>Typescript</span>
+          </div>
+          <div class="tech">
             <img src="../../assets/icons8-css-48.png" alt="" height="30" width="30" />
             <span>CSS</span>
-          </div>
-          <div class="tech">
-            <img src="../../assets/icons8-javascript-48.png" alt="" height="30" width="30" />
-            <span>Javascript</span>
-          </div>
-          <div class="tech">
-            <img src="../../assets/icons8-bootstrap-48.png" alt="" height="30" width="30" />
-            <span>Bootstrap</span>
           </div>
         </div>
         <div class="demo-btns">
           <div class="code">
-            <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToCoffeewebsiteCode()">Code</button>
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="showExzoCode()">Code</button>
             <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
           </div>
           <div class="live-demo">
-            <button [ngClass]="{'desp-color': isDarkMode}" (click)="showCoffeeDemo()">Live Demo</button>
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="showExzoDemo()">Live Demo</button>
             <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -101,16 +99,19 @@
 
     <!-- EXZO ECOMMERCE  -->
     <div class="portfolio-section">
-      <div class="portfolio-content" id="exzo-website"  [@fadeIn]="sectionStates['exzo-website'] || 'hidden'">
+      <div class="portfolio-content"  id="coffee-website"  [@fadeIn]="sectionStates['coffee-website'] || 'hidden'">
         <div class="project-img">
-          <img src="../../assets/exzo.png" alt="" height="351" width="628" />
+          <img src="../../assets/coffee-website.PNG" alt="" height="351" width="628" />
         </div>
-         <div class="project-details">
-          <h4>EXZO</h4>
+        <div class="project-details">
+          <h4>Coffee bucks</h4>
           <p>
-            EXZO is an ecommerce webiste used for the buying the all tech related accessories
-            Mostly for headphones and different variety of headphones. I've built that website
-            on Angular using angular material.
+            A coffee bucks website is an online platform that allows users to place
+            an order for coffee. This website provides a user friendly interface.It
+            is built by using HTML, Javascript , CSS, and bootstrap.At "Coffee
+            bucks" we believe that coffee is more than just a beverage; it's an
+            experience. Our website is crafted with love and passion to share the
+            art and joy of coffee with aficionados and newcomers alike.
           </p>
           <div class="tech-buttons-section">
             <div class="tech">
@@ -118,29 +119,30 @@
               <span>HTML</span>
             </div>
             <div class="tech">
-              <img src="../../assets/icons8-angularjs-48.png" alt="" height="30" width="30" />
-              <span>ANGULAR</span>
-            </div>
-            <div class="tech">
-              <img src="../../assets/icons8-typescript-48.png" alt="" height="30" width="30" />
-              <span>Typescript</span>
-            </div>
-            <div class="tech">
               <img src="../../assets/icons8-css-48.png" alt="" height="30" width="30" />
               <span>CSS</span>
+            </div>
+            <div class="tech">
+              <img src="../../assets/icons8-javascript-48.png" alt="" height="30" width="30" />
+              <span>Javascript</span>
+            </div>
+            <div class="tech">
+              <img src="../../assets/icons8-bootstrap-48.png" alt="" height="30" width="30" />
+              <span>Bootstrap</span>
             </div>
           </div>
           <div class="demo-btns">
             <div class="code">
-              <button [ngClass]="{'desp-color': isDarkMode}" (click)="showExzoCode()">Code</button>
+              <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToCoffeewebsiteCode()">Code</button>
               <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
             </div>
             <div class="live-demo">
-              <button [ngClass]="{'desp-color': isDarkMode}" (click)="showExzoDemo()">Live Demo</button>
+              <button [ngClass]="{'desp-color': isDarkMode}" (click)="showCoffeeDemo()">Live Demo</button>
               <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
             </div>
           </div>
         </div>
+  
       </div>
     </div>
 
