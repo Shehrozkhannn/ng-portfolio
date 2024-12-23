@@ -28,3 +28,9 @@ img{
         display: flex;
     }
 }
+
+@media (max-width: 600px){
+    .footer-section{
+        display: none;
+    }
+}

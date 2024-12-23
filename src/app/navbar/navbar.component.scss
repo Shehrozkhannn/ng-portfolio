@@ -74,7 +74,34 @@ li {
     width: 100%;
   }
 
+.bottom-container{
+    display: none !important;
+    height: 68px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: #b365e1;
+    color: #fff;
+    z-index: 1000;
+}
 
+.mobile-nav{
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            text-align: center;
+            cursor: pointer;
+        }
+        img{
+            filter: invert(1);
+        }
+    }
+}
 
 @media (min-width: 400px) and (max-width: 484px) {
   .right-section{
@@ -110,3 +137,26 @@ li {
     }
 
 }
+
+
+@media (max-width: 600px){
+    .bottom-container{
+        display: flex !important;
+        height: 68px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        background-color: #b365e1;
+        color: #fff;
+        z-index: 1000;
+    }
+    .left-section{
+        display: none;
+    }
+}
+/* Basic styles for both top and bottom navbars */
+  
