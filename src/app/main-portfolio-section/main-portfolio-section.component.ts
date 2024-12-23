@@ -182,7 +182,7 @@ export class MainPortfolioSectionComponent implements OnInit {
   }
 
   showExzoDemo(){
-    const liveDemoUrl = 'https://shehrozkhannn.github.io/EXZO-test/';
+    const liveDemoUrl = 'https://exzo-cfcb5.web.app/';
     window.open(liveDemoUrl, '_blank');  
   }
 
