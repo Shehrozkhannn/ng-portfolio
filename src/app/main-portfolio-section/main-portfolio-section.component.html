@@ -686,12 +686,26 @@
           </div>
           <span class="details">Karachi , Pakistan</span>
         </div>
-        <div>
+        <div class="location">
           <div class="first-line">
             <img src="../../assets/icons8-mail-48.png" alt="" height="30" width="30" />
             <span class="heading" [ngClass]="{'another-black': isDarkMode}">Email</span>
           </div>
-          <span class="details">{{'sharozekkhan@gmail.com'}}</span>
+          <span class="details" (click)="sendEmail('sharozekkhan@gmail.com')">{{'sharozekkhan@gmail.com'}}</span>
+        </div>
+        <div class="location">
+          <div class="first-line">
+            <img src="../../assets/phone.png" alt="" height="30" width="30" />
+            <span class="heading" [ngClass]="{'another-black': isDarkMode}">Contact No</span>
+          </div>
+          <a href="tel:+923232627920" class="details">{{'+923232627920'}}</a>
+        </div>
+        <div class="location">
+          <div class="first-line">
+            <img src="../../assets/whatsapp.png" alt="" height="30" width="30" />
+            <span class="heading" [ngClass]="{'another-black': isDarkMode}">Whatsapp</span>
+          </div>
+          <span class="details" style="cursor: pointer;" (click)="redirectToWapp()">{{'Whatsapp link'}}</span>
         </div>
       </div>
     </div>

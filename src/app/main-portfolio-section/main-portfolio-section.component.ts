@@ -186,5 +186,19 @@ export class MainPortfolioSectionComponent implements OnInit {
     window.open(liveDemoUrl, '_blank');  
   }
 
+  redirectToWapp(){
+    const phoneNumber = '+923232627920';
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;    
+    window.open(whatsappUrl, '_blank');
+  }
+
+
+  sendEmail(email:string) {
+    const subject = 'Hello from Sharoze.dev';
+    const body = 'I would like to get in touch with you.';
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+
 
 }

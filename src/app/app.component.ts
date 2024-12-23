@@ -57,18 +57,21 @@ export class AppComponent implements OnInit, OnDestroy {
     sections.forEach(section => {
       this.observer.observe(section);
     });
-  
-    // Disconnect the observer after the initial setup
-    setTimeout(() => {
-      this.observer.disconnect();
-    }, 500); // Adjust timing based on your needs
   }
   
 
-  scrollTo(section: string){
+  scrollTo(section: string) {
     const element = this.elementRef.nativeElement.querySelector(`#${section}`);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (section === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (element) {
+      setTimeout(() => {
+        const navbarHeight = document.querySelector('.sticky-navbar')?.clientHeight || 0;
+        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      }, 50); // delay by 50ms to ensure smooth rendering
     }
   }
+  
+  
 }
