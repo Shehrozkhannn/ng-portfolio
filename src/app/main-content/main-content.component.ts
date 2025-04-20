@@ -34,7 +34,7 @@ export class MainContentComponent implements OnInit {
   }
 
   downloadResume(){
-    const resumePath = 'assets/SharozeKhanResume.pdf';
+    const resumePath = 'assets/Sharozee.pdf';
     const link = document.createElement('a');
     link.setAttribute('target','_blank');
     link.setAttribute('href', resumePath);
