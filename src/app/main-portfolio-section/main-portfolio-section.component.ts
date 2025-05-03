@@ -21,7 +21,6 @@ export class MainPortfolioSectionComponent implements OnInit {
   sectionStates:any = {};
   isDarkMode:boolean = false;
   constructor(private mode: ModesService) { 
-    // this.isDarkMode = mode.isDarkMode;
   }
 
   ngOnInit(): void {
@@ -119,6 +118,16 @@ export class MainPortfolioSectionComponent implements OnInit {
   showGymDemo(){
     const liveDemoUrl = 'https://shehrozkhannn.github.io/Star-gym/';
     window.open(liveDemoUrl, '_blank');
+  }
+
+  showAwragDemo(){
+    const liveDemoUrl = 'https://awrag-web-267023403147.me-central1.run.app/awrag_web/home';
+    window.open(liveDemoUrl, '_blank');
+  }
+
+  goToAwragCode(){
+    const liveDemoUrl = 'https://github.com/imtiazali1466/awrag_web';
+    window.open(liveDemoUrl, '_blank'); 
   }
 
   gotoGymTemplateCode(){

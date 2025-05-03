@@ -1,11 +1,20 @@
 <div class="main-container">
+  <!-- scroll icon  -->
+  <div class="scroll-to-top" *ngIf="showScrollButton" (click)="scrollToTop()">
+    <svg class="progress-ring" width="60" height="60">
+      <circle class="progress-ring__circle" [attr.stroke-dasharray]="circumference"
+        [attr.stroke-dashoffset]="strokeDashOffset" stroke="gray" stroke-width="5" fill="transparent" r="25" cx="30"
+        cy="30" />
+    </svg>
+    <img src="../assets/up-arrow.png" alt="Scroll to top" />
+  </div>
   <app-navbar (sectionSelected)="scrollTo($event)"></app-navbar>
 
-  <div id="home"  [@bounceIn]="sectionStates['home'] || 'hidden'">
+  <div id="home" [@bounceIn]="sectionStates['home'] || 'hidden'">
     <app-main-content></app-main-content>
   </div>
 
-  <div id="about"  [@bounceIn]="sectionStates['about'] || 'hidden'">
+  <div id="about" [@bounceIn]="sectionStates['about'] || 'hidden'">
     <app-about-me></app-about-me>
   </div>
 

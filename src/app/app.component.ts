@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, HostListener } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
@@ -21,11 +21,28 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class AppComponent implements OnInit, OnDestroy {
   private observer: IntersectionObserver | any;
   sectionStates:any = {};
+  showScrollButton = false;
+  circumference = 2 * Math.PI * 27;
+  strokeDashOffset = this.circumference;
 
   constructor(private elementRef: ElementRef) {}
 
   ngOnInit() {
     this.setupSectionObserver();
+    this.updateProgress(); 
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.showScrollButton = window.pageYOffset > 300;
+    this.updateProgress();
+  }
+
+  updateProgress(): void {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = scrollTop / docHeight;
+    this.strokeDashOffset = this.circumference * (1 - scrollPercent);
   }
 
   ngOnDestroy() {
@@ -71,6 +88,10 @@ export class AppComponent implements OnInit, OnDestroy {
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }, 50); // delay by 50ms to ensure smooth rendering
     }
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   
   

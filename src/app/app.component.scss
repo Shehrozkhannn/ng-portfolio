@@ -1,0 +1,44 @@
+// scroll icon 
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 60px; /* Increased to fit 50px image + padding */
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scroll-to-top img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .scroll-to-top:hover {
+    transform: scale(1.1);
+  }
+  
+  .progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    width: 60px; /* Match button */
+    height: 60px;
+  }
+  
+  .progress-ring__circle {
+    stroke: gray;
+    stroke-width: 5;
+    fill: transparent;
+    r: 27;
+    cx: 30;
+    cy: 30;
+  }

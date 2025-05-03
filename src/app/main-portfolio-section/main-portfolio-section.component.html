@@ -7,14 +7,14 @@
       <h2>Each project is a unique piece of development.</h2>
     </div>
 
-    <!-- coffee shop  -->
-   
+    <!-- EXZO PROJECT  -->
 
-    <div class="portfolio-content" id="exzo-website"  [@fadeIn]="sectionStates['exzo-website'] || 'hidden'">
+
+    <div class="portfolio-content" id="exzo-website" [@fadeIn]="sectionStates['exzo-website'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/exzo.png" alt="" height="351" width="628" />
       </div>
-       <div class="project-details">
+      <div class="project-details">
         <h4>EXZO</h4>
         <p>
           EXZO is an ecommerce webiste used for the buying the all tech related accessories
@@ -42,113 +42,176 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showExzoCode()">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showExzoDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
     </div>
   </div>
 
-     <!-- RENT A CAR  -->
-    <div class="portfolio-section">
-      <div class="portfolio-content" id="rent-hub"  [@fadeIn]="sectionStates['rent-hub'] || 'hidden'">
-        <div class="project-img">
-          <img src="../../assets/rent-car" alt="" height="351" width="628" />
-        </div>
-         <div class="project-details">
-          <h4>RENT HUB</h4>
-          <p>
-            Rent-Hub" is a modern web application designed to streamline the process of renting
-            properties. Developed using React for its dynamic and efficient UI, and Tailwind CSS
-            for responsive design, the application offers seamless functionality across all
-            devices, ensuring users can easily browse, manage, and book rental properties whether
-            they're on a mobile phone or a laptop. The platform is optimized for performance and
-            user experience, making it an ideal solution for the rental market.
-          </p>
-          <div class="tech-buttons-section">
-            <div class="tech">
-              <img src="../../assets/icons8-html-48.png" alt="" height="30" width="30" />
-              <span>HTML</span>
-            </div>
-            <div class="tech">
-              <img src="../../assets/icons8-react-native-48.png" alt="" height="30" width="30" />
-              <span>REACT</span>
-            </div>
-            <div class="tech">
-              <img src="../../assets/tailwind.png" alt="" height="30" width="30" />
-              <span>Tailwind CSS</span>
-            </div>
-          </div>
-          <div class="demo-btns">
-            <div class="code">
-              <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToRentACarCode()">Code</button>
-              <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
-            </div>
-            <div class="live-demo">
-              <button [ngClass]="{'desp-color': isDarkMode}" (click)="showRentACarDemo()">Live Demo</button>
-              <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- COFFEEE WEBSITE  -->
-    <div class="portfolio-section">
-      <div class="portfolio-content"  id="coffee-website"  [@fadeIn]="sectionStates['coffee-website'] || 'hidden'">
-        <div class="project-img">
-          <img src="../../assets/coffee-website.PNG" alt="" height="351" width="628" />
-        </div>
-        <div class="project-details">
-          <h4>Coffee bucks</h4>
-          <p>
-            A coffee bucks website is an online platform that allows users to place
-            an order for coffee. This website provides a user friendly interface.It
-            is built by using HTML, Javascript , CSS, and bootstrap.At "Coffee
-            bucks" we believe that coffee is more than just a beverage; it's an
-            experience. Our website is crafted with love and passion to share the
-            art and joy of coffee with aficionados and newcomers alike ( Its not mobile responsive ).
-          </p>
-          <div class="tech-buttons-section">
-            <div class="tech">
-              <img src="../../assets/icons8-html-48.png" alt="" height="30" width="30" />
-              <span>HTML</span>
-            </div>
-            <div class="tech">
-              <img src="../../assets/icons8-css-48.png" alt="" height="30" width="30" />
-              <span>CSS</span>
-            </div>
-            <div class="tech">
-              <img src="../../assets/icons8-javascript-48.png" alt="" height="30" width="30" />
-              <span>Javascript</span>
-            </div>
-            <div class="tech">
-              <img src="../../assets/icons8-bootstrap-48.png" alt="" height="30" width="30" />
-              <span>Bootstrap</span>
-            </div>
+  <!-- AWRAG  -->
+  <div class="portfolio-section">
+    <div class="portfolio-content" id="awrag" [@fadeIn]="sectionStates['awrag'] || 'hidden'">
+      <div class="project-img">
+        <img src="../../assets/awrag-app.png" alt="" height="351" width="628" />
+      </div>
+      <div class="project-details">
+        <h4>AWRAG</h4>
+        <p>
+          Awraq is a comprehensive financial analytics web application designed to provide users with real-time market
+          data and performance insights. It features two interactive dashboards: the Market Dashboard and the Saudi
+          Company Dashboard, each populated with customizable widgets.
+          Key widgets include Quick Market Overview Index, Financial Indicators, Top Gainers, and more. A dedicated
+          Widget Library allows users to add or remove widgets dynamically, tailoring the dashboard to their specific
+          needs.
+          The platform also includes user account functionality with Profile Management and Subscription Plans,
+          supporting both Arabic and English through a seamless language toggle feature.
+          As a Frontend Developer, I contributed to building and optimizing reusable Angular components, implemented
+          responsive UI features, and ensured smooth integration of real-time data across the dashboards..
+        </p>
+        <div class="tech-buttons-section">
+          <div class="tech">
+            <img src="../../assets/icons8-html-48.png" alt="" height="30" width="30" />
+            <span>HTML</span>
           </div>
-          <div class="demo-btns">
-            <div class="code">
-              <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToCoffeewebsiteCode()">Code</button>
-              <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
-            </div>
-            <div class="live-demo">
-              <button [ngClass]="{'desp-color': isDarkMode}" (click)="showCoffeeDemo()">Live Demo</button>
-              <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
-            </div>
+          <div class="tech">
+            <img src="../../assets/icons8-angularjs-48.png" alt="" height="30" width="30" />
+            <span>Angular</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-typescript-48.png" alt="" height="30" width="30" />
+            <span>TypeScript</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-css-48.png" alt="" height="30" width="30" />
+            <span>SCSS</span>
           </div>
         </div>
-  
+        <div class="demo-btns">
+          <div class="code">
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToAwragCode()">Code</button>
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+          </div>
+          <div class="live-demo">
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="showAwragDemo()">Live Demo</button>
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+
+
+  <!-- RENT A CAR  -->
+  <div class="portfolio-section">
+    <div class="portfolio-content" id="rent-hub" [@fadeIn]="sectionStates['rent-hub'] || 'hidden'">
+      <div class="project-img">
+        <img src="../../assets/rent-car" alt="" height="351" width="628" />
+      </div>
+      <div class="project-details">
+        <h4>RENT HUB</h4>
+        <p>
+          Rent-Hub" is a modern web application designed to streamline the process of renting
+          properties. Developed using React for its dynamic and efficient UI, and Tailwind CSS
+          for responsive design, the application offers seamless functionality across all
+          devices, ensuring users can easily browse, manage, and book rental properties whether
+          they're on a mobile phone or a laptop. The platform is optimized for performance and
+          user experience, making it an ideal solution for the rental market.
+        </p>
+        <div class="tech-buttons-section">
+          <div class="tech">
+            <img src="../../assets/icons8-html-48.png" alt="" height="30" width="30" />
+            <span>HTML</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-react-native-48.png" alt="" height="30" width="30" />
+            <span>REACT</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/tailwind.png" alt="" height="30" width="30" />
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="demo-btns">
+          <div class="code">
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToRentACarCode()">Code</button>
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+          </div>
+          <div class="live-demo">
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="showRentACarDemo()">Live Demo</button>
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COFFEEE WEBSITE  -->
+  <div class="portfolio-section">
+    <div class="portfolio-content" id="coffee-website" [@fadeIn]="sectionStates['coffee-website'] || 'hidden'">
+      <div class="project-img">
+        <img src="../../assets/coffee-website.PNG" alt="" height="351" width="628" />
+      </div>
+      <div class="project-details">
+        <h4>Coffee bucks</h4>
+        <p>
+          A coffee bucks website is an online platform that allows users to place
+          an order for coffee. This website provides a user friendly interface.It
+          is built by using HTML, Javascript , CSS, and bootstrap.At "Coffee
+          bucks" we believe that coffee is more than just a beverage; it's an
+          experience. Our website is crafted with love and passion to share the
+          art and joy of coffee with aficionados and newcomers alike ( Its not mobile responsive ).
+        </p>
+        <div class="tech-buttons-section">
+          <div class="tech">
+            <img src="../../assets/icons8-html-48.png" alt="" height="30" width="30" />
+            <span>HTML</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-css-48.png" alt="" height="30" width="30" />
+            <span>CSS</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-javascript-48.png" alt="" height="30" width="30" />
+            <span>Javascript</span>
+          </div>
+          <div class="tech">
+            <img src="../../assets/icons8-bootstrap-48.png" alt="" height="30" width="30" />
+            <span>Bootstrap</span>
+          </div>
+        </div>
+        <div class="demo-btns">
+          <div class="code">
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToCoffeewebsiteCode()">Code</button>
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+          </div>
+          <div class="live-demo">
+            <button [ngClass]="{'desp-color': isDarkMode}" (click)="showCoffeeDemo()">Live Demo</button>
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- SimplifyVMS -->
   <div class="portfolio-section">
-    <div class="portfolio-content" id="simplify"  [@fadeIn]="sectionStates['simplify'] || 'hidden'">
+    <div class="portfolio-content" id="simplify" [@fadeIn]="sectionStates['simplify'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/simplify-vms.PNG" alt="" height="351" width="628" />
       </div>
@@ -184,11 +247,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showSimplifyVmsDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -200,7 +265,7 @@
   <!-- chatlist  -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content" id="super-chat"  [@fadeIn]="sectionStates['super-chat'] || 'hidden'">
+    <div class="portfolio-content" id="super-chat" [@fadeIn]="sectionStates['super-chat'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/full-chat.png" alt="" height="351" width="628" />
       </div>
@@ -235,11 +300,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToChatwebsiteCode()">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showChatDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -248,7 +315,7 @@
 
   <!-- EZRA AI  -->
   <div class="portfolio-section">
-    <div class="portfolio-content" id="ezra-ai"  [@fadeIn]="sectionStates['ezra-ai'] || 'hidden'">
+    <div class="portfolio-content" id="ezra-ai" [@fadeIn]="sectionStates['ezra-ai'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/papajhons.PNG" alt="" height="351" width="628" />
       </div>
@@ -285,11 +352,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showEzraDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -297,7 +366,7 @@
   </div>
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="star-gym"  [@fadeIn]="sectionStates['star-gym'] || 'hidden'">
+    <div class="portfolio-content" id="star-gym" [@fadeIn]="sectionStates['star-gym'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/gym-template.PNG" alt="" height="351" width="628" />
       </div>
@@ -327,11 +396,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="gotoGymTemplateCode()">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showGymDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -341,7 +412,7 @@
   <!-- THIRD PROJECT  -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="budget-pro"  [@fadeIn]="sectionStates['budget-pro'] || 'hidden'">
+    <div class="portfolio-content" id="budget-pro" [@fadeIn]="sectionStates['budget-pro'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/budget-app.PNG" alt="" height="351" width="628" />
       </div>
@@ -377,11 +448,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="goToBudgetGitHubCode()">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showBudgetLiveDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -392,7 +465,7 @@
   <!-- ELK  -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="draw-stack"  [@fadeIn]="sectionStates['draw-stack'] || 'hidden'">
+    <div class="portfolio-content" id="draw-stack" [@fadeIn]="sectionStates['draw-stack'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/ELK.PNG" alt="" height="351" width="628" />
       </div>
@@ -429,11 +502,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -444,7 +519,7 @@
   <!-- ng-todolist  -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="todolist"  [@fadeIn]="sectionStates['todolist'] || 'hidden'">
+    <div class="portfolio-content" id="todolist" [@fadeIn]="sectionStates['todolist'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/todolist.PNG" alt="" height="351" width="628" />
       </div>
@@ -479,11 +554,13 @@
         <div class="demo-btns">
           <div class="code">
             <button (click)="goToUserListCode()" [ngClass]="{'desp-color': isDarkMode}">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button (click)="showUserListDemo()" [ngClass]="{'desp-color': isDarkMode}">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -494,7 +571,7 @@
   <!-- church template  -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="church"  [@fadeIn]="sectionStates['church'] || 'hidden'">
+    <div class="portfolio-content" id="church" [@fadeIn]="sectionStates['church'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/church-template.PNG" alt="" height="351" width="628" />
       </div>
@@ -508,7 +585,7 @@
           religious organizations.Utilized the latest HTML standards for
           structuring the content and ensuring accessibility.Employed CSS3 for
           styling, layout design , and creating a cohesive visual identity for the
-          church website  ( Its not mobile responsive )
+          church website ( Its not mobile responsive )
         </p>
         <div class="tech-buttons-section">
           <div class="tech">
@@ -527,11 +604,13 @@
         <div class="demo-btns">
           <div class="code">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showChurchCode()">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button [ngClass]="{'desp-color': isDarkMode}" (click)="showChurchDemo()">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -544,7 +623,7 @@
   -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="trend"  [@fadeIn]="sectionStates['trend'] || 'hidden'">
+    <div class="portfolio-content" id="trend" [@fadeIn]="sectionStates['trend'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/digital-trend-template.PNG" alt="" height="351" width="628" />
       </div>
@@ -574,12 +653,14 @@
         </div>
         <div class="demo-btns">
           <div class="code">
-            <button (click)="showDigitalTrendCode()" [ngClass]="{'desp-color': isDarkMode}"  >Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
+            <button (click)="showDigitalTrendCode()" [ngClass]="{'desp-color': isDarkMode}">Code</button>
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button (click)="goToDigitalTrendDemo()" [ngClass]="{'desp-color': isDarkMode}">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -590,7 +671,7 @@
   <!-- host cloud template  -->
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="host-cloud"  [@fadeIn]="sectionStates['host-cloud'] || 'hidden'">
+    <div class="portfolio-content" id="host-cloud" [@fadeIn]="sectionStates['host-cloud'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/host-cloud-template.PNG" alt="" height="351" width="628" />
       </div>
@@ -621,11 +702,13 @@
         <div class="demo-btns">
           <div class="code">
             <button (click)="showHostCloudCode()" [ngClass]="{'desp-color': isDarkMode}">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button (click)="goToHostCloudDemo()" [ngClass]="{'desp-color': isDarkMode}">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25" [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
@@ -633,7 +716,7 @@
   </div>
 
   <div class="portfolio-section">
-    <div class="portfolio-content"  id="job"  [@fadeIn]="sectionStates['job'] || 'hidden'">
+    <div class="portfolio-content" id="job" [@fadeIn]="sectionStates['job'] || 'hidden'">
       <div class="project-img">
         <img src="../../assets/job-portal.PNG" alt="" height="351" width="628" />
       </div>
@@ -643,7 +726,7 @@
           I am excited to showcase my work on an innovative and wfeature-rich Job Portal application developed using
           Angular, SCSS, and HTML. This project highlights my proficiency in front-end development, Angular framework,
           and the implementation of responsive and visually appealing user interfaces.Designed a comprehensive job
-          search functionality with advanced filtering options, allowing users to find relevant job opportunities 
+          search functionality with advanced filtering options, allowing users to find relevant job opportunities
         </p>
         <div class="tech-buttons-section">
           <div class="tech">
@@ -666,11 +749,13 @@
         <div class="demo-btns">
           <div class="code">
             <button (click)="goToJobPortalCode()" [ngClass]="{'desp-color': isDarkMode}">Code</button>
-            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/icons8-github-30.png" alt="" height="30" width="30"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
           <div class="live-demo">
             <button (click)="showJobPortalDemo()" [ngClass]="{'desp-color': isDarkMode}">Live Demo</button>
-            <img src="../../assets/open.png" alt="" height="25" width="25"  [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}"  />
+            <img src="../../assets/open.png" alt="" height="25" width="25"
+              [ngStyle]="{'filter': isDarkMode ? 'invert(1)' : 'none'}" />
           </div>
         </div>
       </div>
