@@ -89,6 +89,13 @@
     text-decoration: none;
 }
 
+
+.project-img img {
+  max-width: 100%;   /* scales with parent */
+  height: auto;      /* maintains aspect ratio */
+  display: block;    /* removes inline gaps */
+}
+
   
   @media (min-width: 400px) and (max-width: 780px) {
         .portfolio-content{
@@ -106,7 +113,7 @@
             }
             .project-details{
                 width: auto !important;
-                margin-left: 45px !important;
+                margin-left: unset !important;
             }
         }
   }
@@ -167,7 +174,7 @@
   }
   .project-img{
       img{
-          width: 358px !important;
+          max-width: 358px !important;
       }
   }
   }
@@ -202,7 +209,7 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 400px) {
+@media (min-width: 320px) and (max-width: 430px) {
     .header-section{
         h2{
             font-size: 20px;
@@ -221,8 +228,13 @@
         }
     }
     .project-details{
-        margin-left: 16px !important;
-        width: unset !important;
+        width: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 32px;
+        margin-left: unset !important;
+        margin-top: 15px;
     }
     .tech-buttons-section{
         justify-content: unset !important;
@@ -243,6 +255,9 @@
         margin-right: unset;
         margin-left: unset;
         width: 218px;
+    }
+    .demo-btns{
+        margin-top: 0px !important;
     }
  
 }
