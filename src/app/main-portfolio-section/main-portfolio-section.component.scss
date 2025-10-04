@@ -91,9 +91,10 @@
 
 
 .project-img img {
-  max-width: 100%;   /* scales with parent */
-  height: auto;      /* maintains aspect ratio */
-  display: block;    /* removes inline gaps */
+    width: 628px;
+    max-width: 100%;   /* scales with parent */
+    height: auto;      /* maintains aspect ratio */
+    display: block;    /* removes inline gaps */
 }
 
   
